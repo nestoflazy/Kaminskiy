@@ -550,6 +550,131 @@ details[open]::details-content {
   cursor: pointer;
 }
 
+/* ФОРМА ЗАЯВКИ */
+
+#form-request {
+  background:
+    url(assets/img/bg_request_bottom.svg) no-repeat -175px 15px,
+    url(assets/img/bg_request_bottom.svg) no-repeat 1175px -450px,
+    #f8f9fd;
+}
+
+.form-request__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  gap: 20px;
+}
+
+.form-request__header {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 140%;
+  color: #002448;
+  max-width: 372px;
+}
+
+.form-request__header > span {
+  color: #27aae2;
+}
+
+.form-request__field-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  width: 100%;
+  max-width: 608px;
+}
+
+.form-request__content form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.form-request__content .form-request__control-string input,
+.form-request__content form textarea {
+  border: 1px solid rgba(162, 167, 171, 0.6);
+  border-radius: 5px;
+  padding: 10px 14px;
+  width: 100%;
+}
+
+.form-request__content form textarea {
+  min-height: 63px;
+}
+
+.form-request__content .longtext {
+  max-height: 63px;
+  grid-column: span 2;
+}
+
+.form-request__content form input::placeholder,
+.form-request__content form textarea::placeholder {
+  font-family: Graphik LCG;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #a2a7ab;
+}
+
+.form-request__control-desc {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  color: #a2a7ab;
+}
+
+.form-request__control-required {
+  display: block;
+  color: #6c85a4;
+  margin-top: 5px;
+}
+
+.form-request__btn-container button {
+  border-radius: 4px;
+  border: none;
+  padding: 8px 36px;
+  width: 100%;
+  background: #37aae1;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #fff;
+}
+
+.form-request__control-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.form-request__control-container input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .form-request__field-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .form-request__header {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 468px) {
+  .form-request__content .longtext {
+    grid-column: span 1;
+  }
+}
+
 /* ----- MQ ------ */
 
 @media (max-width: 1000px) {
@@ -589,12 +714,11 @@ details[open]::details-content {
   }
 }
 
-
 @media (max-width: 480px) {
   /* team */
   .team__item-top {
-        flex-direction: column;
-  } 
+    flex-direction: column;
+  }
   .item-top__info,
   .team__item:hover .item-top__info {
     padding: 0;

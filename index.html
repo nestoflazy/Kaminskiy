@@ -1339,6 +1339,92 @@
         </div>
       </div>
     </section>
+        <!-- ФОРМА ЗАЯВКИ -->
+    <section class="section_padding dark_white" id="form-request">
+      <div class="container">
+        <div class="form-request__wrapper">
+          <div class="form-request__header">
+            Оставьте заявку
+            <span>на консультацию</span>
+          </div>
+          <!---->
+          <div class="form-request__content">
+            <form method="post" novalidate="novalidate">
+              <!-- field-->
+              <div class="form-request__field-container">
+                <label class="form-request__control-string">
+                  <input
+                    name="lastname"
+                    placeholder="Имя*"
+                    autocomplete="family-name"
+                    type="string"
+                    class="b24-form-control"
+                  />
+                </label>
+                <!-- <div class="b24-form-control-alert-message"
+                  style="display: none">
+                  Поле обязательно для заполнения
+                </div> -->
+                <!-- field-->
+                <label class="form-request__control-string">
+                  <input
+                    name="name"
+                    placeholder="Фамилия*"
+                    autocomplete="given-name"
+                    type="string"
+                    class="b24-form-control"
+                  />
+                </label>
+                     <!-- field-->
+                <label class="form-request__control-string">
+                  <input
+                    name="email"
+                    placeholder="Email*"
+                    autocomplete="email"
+                    type="email"
+                    class="b24-form-control"
+                  />
+                </label>
+                <!-- field-->
+                <label class="form-request__control-string">
+                  <input
+                    name="phone"
+                    placeholder="+7 (000) 000-00-00*"
+                    autocomplete="tel"
+                    type="tel"
+                    class="b24-form-control"
+                  />
+                </label>           
+                <!-- field-->
+                <label class="form-request__control-string longtext">
+                  <textarea
+                    class="b24-form-control"
+                    placeholder="Комментарий"
+                  ></textarea>
+                </label>
+              </div>
+
+              <div class="form-request__field-container">
+                <div class="form-request__field-agreement">
+                  <label class="form-request__control-container">
+                    <input type="checkbox" name="check" onclick="this.blur()" />
+                    <span class="form-request__control-desc"
+                      >Нажимая кнопку «Заказать консультацию», я даю Согласие на
+                      обработку персональных данных <span class="form-request__control-required"
+                      >*Поле обязательно для заполнения</span></span>                    
+                  </label>
+                  <!---->
+                </div>
+                <!---->
+                <div class="form-request__btn-container">
+                  <button type="submit" class="">Заказать консультацию</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
